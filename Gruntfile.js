@@ -401,7 +401,7 @@ module.exports = function (grunt) {
     pages: {
       options: {
         remote: 'git@github.com:web-keb/web-keb.github.io.git',
-        branch: 'gh-pages'
+        branch: 'master'
       }
     }
   }
