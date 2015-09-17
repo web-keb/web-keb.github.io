@@ -25,6 +25,10 @@ body {
   text-transform: uppercase;
 }
 
+.navbar-brand {
+  padding: 7px;
+}
+
 .section {
   &-content {
     border-bottom: 1px solid #eee;
@@ -41,8 +45,8 @@ body {
 .hero {
   text-align: center;
   .section-content {
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   &-title {
     text-transform: uppercase;
@@ -70,7 +74,7 @@ body {
 
   .glyphicon {
     font-size: 32px;
-    color: #3F4DA1;
+    color: #2cbef1;
   }
 
   .about-item {
@@ -88,7 +92,7 @@ body {
   }
 }
 
-.services, .subscribe {
+.section-content {
   h1 {
     font-weight: 100;
     text-transform: uppercase;
@@ -99,6 +103,10 @@ body {
     font-weight: 100;
     font-size: 24px;
   }
+}
+
+.services, .contacts, .brief {
+
 
   .row {
     margin-bottom: 40px;
@@ -156,7 +164,27 @@ body {
   }
 }
 
+.client {
+  display: inline-block;
+  margin-right: 30px;
 
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    margin: 30px 0 0 0;
+
+    &:last-child {
+      margin: 30px 0 0 0;
+    }
+  }
+}
+
+.clients {
+  margin: 50px 0;
+}
 
 .footer {
   padding: 30px 0;
